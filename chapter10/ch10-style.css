@@ -45,10 +45,10 @@ hr {
 /* 最低限テーブルらしく見せるためのCSS */
 /* P154 chapter7/c07-01-b */
 #ch10-1-b table {
-	border-collapse: collapse;	
+	border-collapse: collapse;
 }
 #ch10-1-b th, #ch10-1-b td {
-	border:1px solid #8fbac8;
+	border: 1px solid #8fbac8;
 	padding: 8px;
 }
 
@@ -158,7 +158,7 @@ hr {
 	color: #1f8ef5;
 }
 #ch10-3-a .price th,
-#ch10-3-a td {
+#ch10-3-a .price td {
 	border: 1px solid #e3ecf5;
 	padding: 8px;
 }
@@ -167,31 +167,29 @@ hr {
 	color: #fff;
 	background: #1f8ef5;
 }
-#ch10-3-a .price tr:nth-child(odd){
-       background: #e3ecf5;
-}       
+#ch10-3-a .price tr:nth-child(odd) {
+	background: #e3ecf5;
+}
 
 
 /* P167-168 chapter7/c07-03-b */
-#ch10-3-b .table-wrapper{
-       overflow-x: scroll;
-}       
-
+#ch10-3-b .table-wrapper {
+	overflow-x: scroll;
+}
 #ch10-3-b table {
 	border-collapse: collapse;
 }
-#ch10-3-b .price{
-      width:1000px;
-}      
-
+#ch10-3-b .price {
+	width: 1000px;
+}
 #ch10-3-b .price caption {
 	text-align: left;
 }
 #ch10-3-b .price th,
-#ch10-3-b td {
+#ch10-3-b .pricet d {
 	border: 1px solid #8fbac8;
 	padding: 8px;
 }
 #ch10-3-b .price th {
-	white-space:nowrap;	
+	white-space: nowrap;
 }

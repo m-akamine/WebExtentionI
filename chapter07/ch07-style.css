@@ -65,7 +65,7 @@ hr {
 }
 
 #ch07-1-b h2 {
-
+	font-size: 16px;
 }
 
 
@@ -73,11 +73,11 @@ hr {
 /* htmlの文字サイズは16px程度 */
 
 #ch07-1-c h1 {
-	font-size:1.4rem;
+	font-size: 1.4rem;
 }
 
 #ch07-1-c h2 {
-	font-size:1.14rem;
+	font-size: 1.14rem;
 }
 
 
@@ -104,8 +104,7 @@ hr {
 
 #ch07-4-a {
 	line-height: 1.7;
-	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "MS Pゴシック", sans-serif;
-
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "MS　Pゴシック", sans-serif;
 }
 
 #ch07-4-a .lead {
@@ -200,7 +199,7 @@ hr {
 /* P73 chapter4/c04-07-a */
 
 #ch07-7-a {
-	color: #F596AA;
+	color: #002a5a;
 }
 
 /* P75 chapter4/c04-07-b */

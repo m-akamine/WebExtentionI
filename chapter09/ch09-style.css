@@ -61,7 +61,8 @@ hr {
 	list-style-type: none;
 }
 #ch09-2-b .subnav a {
-	
+	padding-left: 16px;
+	background: url(images/listmark.png) no-repeat left 0 top 4px;
 	color: #1864b9;
 	text-decoration: none;
 }
@@ -108,14 +109,14 @@ hr {
 	padding: 0;
 }
 #ch09-2-d .breadcrumb li {
-	
+	display: inline;
 }
 #ch09-2-d .breadcrumb li::after {
-	
+	content: "»";
 	color: #999;
 }
 #ch09-2-d .breadcrumb li:last-child::after {
-	
+	content: none;
 }
 #ch09-2-d .breadcrumb a {
 	text-decoration: none;
@@ -127,7 +128,7 @@ hr {
 /* P132 chapter6/c06-03-a */
 
 #ch09-3-a .item {
-	
+	border: 1px solid #cccccc;
 	width: 300px;
 }
 #ch09-3-a .item h3 {
@@ -145,7 +146,8 @@ hr {
 /* P134 chapter6/c06-03-b */
 
 #ch09-3-b .item {
-	
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
 	width: 300px;
 }
 #ch09-3-b .item h3 {
@@ -163,7 +165,7 @@ hr {
 
 #ch09-3-c .item {
 	border: 1px solid #ccc;
-	
+	padding: 8px;
 	width: 300px;
 }
 #ch09-3-c .item h3 {
@@ -180,7 +182,7 @@ hr {
 /* P137 chapter6/c06-04-a */
 
 #ch09-4-a .item {
-	
+	margin: 16px;
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
@@ -198,10 +200,12 @@ hr {
 /* ボックスを横に並べる */
 /* P139-P140 chapter6/c06-04-b */
 
-#ch09-4-b 
-
+#ch09-4-b .wrapper {
+	overflow: hidden;
+}
 #ch09-4-b .item {
-
+	float: left;
+	margin: 8px 0 8px 8px;
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
@@ -224,7 +228,7 @@ hr {
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
-	
+	background-color: #fafafa;
 }
 #ch09-5-a .item h3 {
 	margin: 0.5em 0 0.5em 0;
@@ -247,7 +251,7 @@ hr {
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
-	
+	background: url(images/bg1204.png) #fafafa;
 }
 #ch09-5-b .item h3 {
 	margin: 0.5em 0 0.5em 0;
@@ -266,14 +270,16 @@ hr {
 	margin: 0;
 	padding: 32px;
 	width: 300px;
-	
+	background: url(images/quote-left.png) no-repeat left 10px top 20px,
+				url(images/quote-right.png) no-repeat right 10px bottom 20px,
+				#eee;
 }
 
 /* ボックスの角を丸くする */
 /* P149 chapter6/c06-05-d */
 
 #ch09-5-d blockquote {
-	
+	border-radius: 10px;
 	margin: 0;
 	padding: 32px;
 	width: 300px;

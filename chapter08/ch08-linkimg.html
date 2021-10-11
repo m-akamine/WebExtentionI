@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>リンクの設定と画像の表示</title>
 <!-- 外部ファイルのch08-style.cssを読み込む -->
-
+<link rel="stylesheet" type="text/css" href="ch08-style.css">
 
 </head>
 <body>
@@ -18,13 +18,13 @@
 <h3 class="main-style">別のサイトへリンクする</h3>
 <!-- P82 chapter5/c05-01-a/index.html -->
 <section id="ch08-1-a">
-	<a href="">SBクリエイティブ社のWebサイトへ</a>
+	<a href="http://www.sbcr.jp">SBクリエイティブ社のWebサイトへ</a>
 </section>
 
 <h3 class="main-style">リンクを別タブで開く</h3>
 <!-- P82 chapter5/c05-01-b/index.html -->
 <section id="ch08-1-b">
-	<a href="http://www.sbcr.jp">SBクリエイティブ社のWebサイトへ</a>
+	<a href="http://www.sbcr.jp" target="_blank">SBクリエイティブ社のWebサイトへ</a>
 </section>
 
 <h3 class="main-style">サイト内の別のページへリンクする</h3>
@@ -40,28 +40,28 @@
 <p>CSSでフォントを指定するにはfont-familyプロパティを使用します。カンマで区切って複数のフォントを指定しておくと、1つ目から順に探して最初に見つかったフォントで表示されます。どれも見つからなかったときの保険として、必ず最後に一般的なフォントファミリーを指すキーワードを入れておきます。</p>
 
 <ul>
-	<li>5種類の一般フォントファミリーキーワード</li>
-	<li>sans-serif</li>
-	<li>serif</li>
-	<li>cursive</li>
-	<li>fantasy</li>
-	<li>monospace</li>
+	<li><a href="#headline1037">5種類の一般フォントファミリーキーワード</a></li>
+	<li><a href="#headline1040">sans-serif</a></li>
+	<li><a href="#headline1106">serif</a></li>
+	<li><a href="#headline1144">cursive</a></li>
+	<li><a href="#headline1144">fantasy</a></li>
+	<li><a href="#headline1058">monospace</a></li>
 </ul>
-<h2>5種類の一般フォントファミリーキーワード</h2>
+<h2 id="headline1037">5種類の一般フォントファミリーキーワード</h2>
 <p>特定のフォントではなく一般的なフォントの種類を指すキーワードには、sans-serif、serif、cursive、fantasy、monospaceの5種類があります。</p>
-<h2>sans-serif</h2>
+<h2 id="headline1040">sans-serif</h2>
 <p>欧文フォントでは「サンセリフ」を指すキーワードです。日本語では「ゴシック体」が該当します。</p>
 <pre>font-family: sans-serif;</pre>
-<h2>serif</h2>
+<h2 id="headline1106">serif</h2>
 <p>欧文フォントでは「セリフ」を指すキーワードです。日本語では「明朝体」が該当します。</p>
 <p><code>font-family: serif;</code></p>
-<h2>cursive</h2>
+<h2 id="headline1108">cursive</h2>
 <p>手書き文字を指すキーワードです。欧文書体はOS、ブラウザによって表示するフォントが大きく異なります。また、日本語はこれに対応するフォントがなく、明朝体などで表示されます。使ってもあまり意味がないためほとんど使われません。</p>
 <p><code>font-family: cursive;</code></p>
-<h2>fantasy</h2>
+<h2 id="headline1144">fantasy</h2>
 <p>装飾書体を表すキーワードです。cursive同様、欧文書体はOS、ブラウザによって表示するフォントが大きく異なります。また、日本語はこれに対応するフォントがなく、ゴシック体などで表示されます。使ってもあまり意味がないためほとんど使われません。</p>
 <p><code>font-family: fantasy;</code></p>
-<h2>monospace</h2>
+<h2 id="headline1058">monospace</h2>
 <p>san-serif、seif以外で唯一よく使われるのがmonospaceです。等幅フォントを指します。等幅フォントとは1文字1文字の横幅が同じに作られた書体です。プログラムのソースコードを表示するときなどによく使われます。</p>
 <p><code>font-family: monospace;</code></p>
 </section>
@@ -110,7 +110,7 @@
 <h3 class="main-style">画像を表示する</h3>
 <!-- P100-P101 chapter5/c05-03-a/index.html -->
 <section id="ch08-3-a">
-
+	<img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む">
 </section>
 
 <h3 class="main-style">表示する画像サイズが伸縮されるようにする</h3>
@@ -122,9 +122,9 @@
 <h3 class="main-style">画像を縮小して表示する</h3>
 <!-- P103 chapter5/c05-03-c/index.html -->
 <section id="ch08-3-c">
-
-	<img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む">
-
+<div class="thumbnail">
+	<img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む" class="img-responsive">
+</div>
 </section>
 
 <hr>
@@ -134,20 +134,20 @@
 <h3 class="main-style">画像にリンクをつける</h3>
 <!-- P104 chapter5/c05-04-a/index.html -->
 <section id="ch08-4-a">
-
+<a href="http://studio947.net">
 	<img src="images/image0320.jpg" width="396" height="292" alt="積み木">
-
+</a>
 </section>
 
 <h3 class="main-style">画像もテキストもクリックできるようにする</h3>
 <!-- P104-P105 chapter5/c05-04-b/index.html -->
 <section id="ch08-4-b">
-
+<a href="http://studio947.net">
 	<div>
 		<img src="images/image0320.jpg" width="396" height="292" alt="">
 	</div>
 	<p>カラフルな積み木のセット</p>
-
+</a>
 </section>
 
 <h3 class="main-style">ホバーしたとき画像の透明度を変更する</h3>
@@ -166,7 +166,7 @@
 <section id="ch08-4-d">
 <a href="http://studio947.net">
 	<div>
-		<img src="images/image0320.jpg" width="396" height="292" alt="積み木">
+		<img src="images/image0320.jpg" width="396" height="292" alt="積み木" class="frame">
 	</div>
 	<p>カラフルな積み木のセット</p>
 </a>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            box-sizing: border-box;
+        }
+        input[type="text"]{
+            width:100%;
+        }
+        .required{
+            padding: 0.5em;
+            font-size: 0.75em;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <p>
+        <label for="name-field">お名前 <span class="required">*必須</span></label><br>
+        <input type="text" name="" id="name-field" required>
+    </p>
+    <p>
+        <input type="checkbox" name="" id=""> 選択1 <br>
+        <input type="checkbox" name="" id="" checked> 選択2 <br>
+        <input type="checkbox" name="" id=""> 選択3 <br>
+        <input type="checkbox" name="" id=""> 選択4 <br>
+    </p>
+    <p>
+        <select name="" id="">
+            <option value="">セレクト1</option>
+            <option value="">セレクト2</option>
+            <option value="" selected>セレクト3</option>
+            <option value="">セレクト4</option>
+            <option value="">セレクト5</option>
+        </select>
+    </p>
+    <input type="submit">
+    </form>
+</body>
+</html>

@@ -14,4 +14,5 @@
 10. Chapter10 「[テーブル](chapter10/ch10-table.html)」  
 11. Chapter11 「[フォーム](chapter11/ch11-form.html)」  
 12. Chapter12 「[ページ全体のレイアウトとナビゲーション](chapter12/index.html)」  
-12. Chapter13 「[レスポンシブWebデザインのページを作成しよう](chapter13/index.html)」  
+13. Chapter13 「[レスポンシブWebデザインのページを作成しよう](chapter13/index.html)」  
+14. Task02 「[Bootstrap学科紹介](Task02/index.html)」 
